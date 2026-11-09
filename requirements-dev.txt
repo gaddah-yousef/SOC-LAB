@@ -1,2 +1,2 @@
-bcrypt==4.2.1
+bcrypt==5.0.0
 PyYAML==6.0.2
