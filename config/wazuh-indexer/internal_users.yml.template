@@ -1,0 +1,16 @@
+---
+_meta:
+  type: internalusers
+  config_version: 2
+
+admin:
+  hash: "__ADMIN_HASH__"
+  reserved: true
+  backend_roles:
+    - admin
+  description: Locally generated SOC lab administrator
+
+kibanaserver:
+  hash: "__DASHBOARD_HASH__"
+  reserved: true
+  description: Locally generated Wazuh dashboard service account

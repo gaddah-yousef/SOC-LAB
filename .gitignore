@@ -1,0 +1,22 @@
+# Local credentials and generated configuration
+.env
+runtime/
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Editors and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local evidence exports
+evidence/
+*.pcap
+*.pcapng

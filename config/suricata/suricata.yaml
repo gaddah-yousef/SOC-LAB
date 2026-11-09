@@ -1,0 +1,65 @@
+%YAML 1.1
+---
+vars:
+  address-groups:
+    HOME_NET: "[172.30.0.0/24]"
+    EXTERNAL_NET: "any"
+
+default-log-dir: /var/log/suricata
+default-rule-path: /etc/suricata/rules
+rule-files:
+  - lab.rules
+
+outputs:
+  - fast:
+      enabled: false
+  - eve-log:
+      enabled: true
+      filetype: regular
+      filename: eve.json
+      community-id: true
+      community-id-seed: 0
+      types:
+        - alert:
+            tagged-packets: true
+        - anomaly
+        - dns
+        - fileinfo
+        - flow
+        - http:
+            extended: true
+        - stats:
+            totals: true
+            threads: false
+        - tls:
+            extended: true
+
+af-packet:
+  - interface: eth0
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: true
+    use-mmap: true
+    tpacket-v3: true
+
+pcap:
+  - interface: eth0
+
+app-layer:
+  protocols:
+    dns:
+      tcp:
+        enabled: true
+      udp:
+        enabled: true
+    http:
+      enabled: true
+    tls:
+      enabled: true
+
+logging:
+  default-log-level: notice
+  outputs:
+    - console:
+        enabled: true
+        type: console

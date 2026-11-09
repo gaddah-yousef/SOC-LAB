@@ -1,0 +1,22 @@
+{
+  "Event": {
+    "uuid": "08f4a6d2-1bc4-4a95-9a15-111111111111",
+    "info": "Controlled credential-access source for LAB-ENDPOINT-001",
+    "date": "2026-11-07",
+    "distribution": "3",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "published": true,
+    "Attribute": [
+      {
+        "uuid": "08f4a6d2-1bc4-4a95-9a15-222222222222",
+        "type": "ip-src",
+        "category": "Network activity",
+        "value": "198.51.100.23",
+        "to_ids": true,
+        "comment": "RFC 5737 documentation address used only by the lab"
+      }
+    ],
+    "Tag": [{"name": "tlp:white"}, {"name": "simulation"}]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "08f4a6d2-1bc4-4a95-9a15-111111111111": {
+    "Orgc": {"name": "Enterprise SOC Lab"},
+    "Tag": [{"name": "tlp:white"}, {"name": "simulation"}],
+    "info": "Controlled credential-access source for LAB-ENDPOINT-001",
+    "date": "2026-11-07",
+    "threat_level_id": "2",
+    "analysis": "2",
+    "timestamp": "1794009600"
+  }
+}

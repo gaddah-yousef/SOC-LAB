@@ -1,0 +1,44 @@
+---
+detections:
+  - id: 100100
+    name: Repeated SSH authentication failures
+    source: Wazuh agent syslog
+    technique: T1110.001
+    severity: high
+    expected_scenario: ssh-bruteforce
+    false_positives: Password managers, stale automation, user typing errors
+  - id: 100110
+    name: Scripted web reconnaissance
+    source: Suricata EVE JSON
+    technique: T1595.002
+    severity: high
+    expected_scenario: web-recon
+    false_positives: Authorized vulnerability scanning with the lab user agent
+  - id: 100120
+    name: Sensitive path discovery
+    source: Suricata EVE JSON
+    technique: T1190
+    severity: medium
+    expected_scenario: web-recon
+    false_positives: Manual application testing and asset inventory
+  - id: 100130
+    name: Monitored persistence artifact created
+    source: Wazuh FIM
+    technique: T1546
+    severity: medium
+    expected_scenario: persistence-artifact
+    false_positives: Approved startup or configuration deployment
+  - id: 100140
+    name: Reconnaissance user agent observed
+    source: Zeek HTTP JSON
+    technique: T1595.002
+    severity: medium
+    expected_scenario: web-recon
+    false_positives: Authorized lab verification
+  - id: 100150
+    name: Authentication failure from a threat-intel IOC
+    source: Wazuh CDB list and agent syslog
+    technique: T1110.001
+    severity: high
+    expected_scenario: ssh-bruteforce
+    false_positives: Documentation ranges intentionally used by the lab

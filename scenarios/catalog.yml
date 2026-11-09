@@ -1,0 +1,41 @@
+---
+scenarios:
+  - id: LAB-ENDPOINT-001
+    slug: ssh-bruteforce
+    name: Repeated SSH authentication failures
+    technique: T1110.001
+    tactic: Credential Access
+    expected_rules: [5710, 100100, 100150]
+    evidence:
+      - runtime/telemetry/endpoint/auth.log
+      - runtime/evidence/LAB-ENDPOINT-001-*.json
+    safety_controls:
+      - Writes deterministic synthetic log lines; it opens no network connection.
+      - Uses the fixed documentation address 198.51.100.23.
+
+  - id: LAB-NETWORK-001
+    slug: web-recon
+    name: Web service discovery against the lab target
+    technique: T1595.002
+    tactic: Reconnaissance
+    expected_rules: [900001, 900002, 100110, 100120, 100140]
+    evidence:
+      - runtime/telemetry/suricata/eve.json
+      - runtime/telemetry/zeek/http.log
+      - runtime/evidence/LAB-NETWORK-001-*.json
+    safety_controls:
+      - The destination is hard-coded to the internal web-target service.
+      - The simulator only joins the internal target-segment Docker network.
+
+  - id: LAB-ENDPOINT-002
+    slug: persistence-artifact
+    name: Creation of a monitored startup artifact
+    technique: T1546
+    tactic: Persistence
+    expected_rules: [554, 100130]
+    evidence:
+      - runtime/telemetry/endpoint/fim/lab-update.conf
+      - runtime/evidence/LAB-ENDPOINT-002-*.json
+    safety_controls:
+      - Creates a harmless text fixture only inside the ignored runtime directory.
+      - Does not modify host startup configuration or execute the artifact.

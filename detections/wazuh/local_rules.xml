@@ -1,0 +1,64 @@
+<group name="enterprise_soc_lab,">
+  <rule id="100100" level="10" frequency="5" timeframe="60">
+    <if_matched_sid>5710</if_matched_sid>
+    <same_source_ip />
+    <description>LAB: repeated SSH authentication failures from one source</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>authentication_failures,brute_force,lab_ssh,</group>
+  </rule>
+
+  <rule id="100110" level="12">
+    <decoded_as>json</decoded_as>
+    <field name="event_type">alert</field>
+    <field name="alert.signature_id">900001</field>
+    <description>LAB: Suricata detected scripted web reconnaissance</description>
+    <mitre>
+      <id>T1595.002</id>
+    </mitre>
+    <group>suricata,web_recon,network_detection,</group>
+  </rule>
+
+  <rule id="100120" level="9">
+    <decoded_as>json</decoded_as>
+    <field name="event_type">alert</field>
+    <field name="alert.signature_id">900002</field>
+    <description>LAB: Suricata detected a suspicious sensitive-path request</description>
+    <mitre>
+      <id>T1190</id>
+    </mitre>
+    <group>suricata,initial_access,web_attack,</group>
+  </rule>
+
+  <rule id="100130" level="8">
+    <if_sid>554</if_sid>
+    <field name="file" type="pcre2">^/var/log/lab/fim/</field>
+    <description>LAB: monitored persistence artifact was created</description>
+    <mitre>
+      <id>T1546</id>
+    </mitre>
+    <group>fim,persistence,endpoint_detection,</group>
+  </rule>
+
+  <rule id="100140" level="7">
+    <decoded_as>json</decoded_as>
+    <field name="_path">http</field>
+    <field name="user_agent" type="pcre2">(?i)Enterprise-SOC-Lab-Recon</field>
+    <description>LAB: Zeek observed the allowlisted reconnaissance user agent</description>
+    <mitre>
+      <id>T1595.002</id>
+    </mitre>
+    <group>zeek,web_recon,network_metadata,</group>
+  </rule>
+
+  <rule id="100150" level="10">
+    <if_sid>5710</if_sid>
+    <list field="srcip" lookup="address_match_key">etc/lists/lab-malicious-ips</list>
+    <description>LAB: authentication failure originated from a threat-intel IOC</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>threat_intelligence,authentication_failures,</group>
+  </rule>
+</group>
