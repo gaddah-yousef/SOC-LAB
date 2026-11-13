@@ -133,14 +133,14 @@ playbooks reflect the implemented system.
 
 ## Task 11: Portfolio presentation
 
-**Acceptance:** a 15-minute demo, evidence checklist and honest bilingual CV
-statements are available.
+**Acceptance:** the README explains the lab architecture, supported scenarios,
+security boundaries and links to technical playbooks.
 
 **Verify:** manual documentation review against the implementation.
 
 **Dependencies:** Tasks 8 and 10.
 
-**Files:** `README.md`, files under `docs/portfolio/`.
+**Files:** `README.md`, `docs/architecture/` and `docs/playbooks/`.
 
 - [x] Complete
 
@@ -153,6 +153,6 @@ explicitly marked blocked with the exact remediation.
 
 **Dependencies:** Tasks 1-11.
 
-**Files:** `docs/verification.md`, `tasks/todo.md`.
+**Files:** `tasks/todo.md`, `.github/workflows/quality.yml`.
 
 - [x] Complete
