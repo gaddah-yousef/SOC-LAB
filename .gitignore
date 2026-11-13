@@ -20,3 +20,8 @@ Thumbs.db
 evidence/
 *.pcap
 *.pcapng
+
+# Internal-only portfolio / review notes (keep local, never publish)
+/docs/portfolio/cv.md
+/docs/portfolio/demo.md
+/docs/verification.md
