@@ -100,8 +100,8 @@ make case SCENARIO=ssh-bruteforce
 | `persistence-artifact` | T1546 | Wazuh FIM |
 
 Chaque exécution écrit une preuve horodatée sous `runtime/evidence/`, ignorée
-par Git. Voir [docs/portfolio/demo.md](docs/portfolio/demo.md) pour une démo de
-15 minutes et [docs/playbooks](docs/playbooks) pour les réponses analyste.
+par Git. Consultez les [playbooks analyste](docs/playbooks) pour les étapes de
+qualification et de réponse aux alertes.
 
 ## Commandes utiles
 
@@ -133,9 +133,6 @@ make destroy CONFIRM_DESTROY=yes # destructif: supprime les volumes
 - [Architecture et flux](docs/architecture/architecture.md)
 - [Threat model](soc-threat-model.md)
 - [Runbook opérateur](docs/runbooks/operations.md)
-- [Démo portfolio](docs/portfolio/demo.md)
-- [Formulations CV](docs/portfolio/cv.md)
-- [État de vérification](docs/verification.md)
 
 Les topologies Wazuh sont adaptées de la documentation Docker officielle
 Wazuh `v4.14.10`; les sources et licences sont consignées dans [NOTICE.md](NOTICE.md).
