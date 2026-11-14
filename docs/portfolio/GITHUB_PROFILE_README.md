@@ -1,11 +1,15 @@
 <div align="center">
 
-# Hi, I'm Yousef Gaddah 👋
+# 👋 Hi, I'm Yousef Gaddah
+
+### Cybersecurity Engineering • Threat-Informed Defense • Secure Cloud Systems
+
+![Security Operations](https://img.shields.io/badge/Focus-SOC%20%26%20Threat%20Detection-0B7285) ![Cloud](https://img.shields.io/badge/Focus-Cloud%20Security-2563EB) ![DevSecOps](https://img.shields.io/badge/Focus-DevSecOps-7C3AED)
 
 **Cybersecurity & Cloud Computing Engineering Student**  
 **SOC & Detection Engineering · Cloud Security · DevSecOps · Threat Intelligence**
 
-📍 Rabat, Morocco · 🎓 ENIM / Mines Rabat · 🎯 Seeking a **6-month PFE internship in 2027**
+📍 Rabat, Morocco · 🎓 ENIM / Mines Rabat · 🎯 Seeking a **6-month PFE internship from February 2027**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yousef-gaddah)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?logo=gmail&logoColor=white)](mailto:yousef.gaddah@enim.ac.ma)
@@ -23,7 +27,7 @@ My hands-on experience includes a **Cyber Threat Intelligence internship** focus
 
 My current focus is to grow into a strong **SOC / Detection Engineer, Cloud Security Engineer, or DevSecOps Engineer** through reproducible projects, measurable tests, and clear technical documentation.
 
-## 🔎 Featured projects
+## 🚀 Featured cybersecurity projects
 
 | Project | What it demonstrates | Key technologies |
 | :--- | :--- | :--- |
@@ -38,7 +42,7 @@ My current focus is to grow into a strong **SOC / Detection Engineer, Cloud Secu
 
 > These repositories include educational labs, prototypes and ongoing work. See each project’s README for its **implemented scope, setup instructions, validation status and limitations**. YGscan builds on existing community work; upstream attribution is preserved in its repository.
 
-## 🧰 Technical skills
+## 🛠️ Technical toolkit
 
 | Area | Tools and concepts |
 | :--- | :--- |
@@ -54,9 +58,9 @@ For **SOC / Blue Team roles**, start with **[SOC-LAB](https://github.com/gaddah-
 
 I value **reproducible labs, honest technical documentation, safe testing and proper open-source attribution**.
 
-## 🤝 Opportunities and contact
+## 🤝 Let's connect
 
-I am exploring a **six-month end-of-studies (PFE) internship in 2027**, particularly in **SOC/SIEM, Detection Engineering, Cloud Security, DevSecOps, Cyber Threat Intelligence or Application Security**.
+I am exploring a **six-month end-of-studies (PFE) internship starting February 2027**, particularly in **SOC/SIEM, Detection Engineering, Cloud Security, DevSecOps, Cyber Threat Intelligence or Application Security**.
 
 - **LinkedIn:** [linkedin.com/in/yousef-gaddah](https://www.linkedin.com/in/yousef-gaddah)
 - **Email:** [yousef.gaddah@enim.ac.ma](mailto:yousef.gaddah@enim.ac.ma)
