@@ -1,4 +1,20 @@
-# Enterprise SOC Lab
+<div align="center">
+
+# 🛡️ Enterprise SOC Lab
+### Detection Engineering · Network Telemetry · Incident Response
+
+![Security](https://img.shields.io/badge/Domain-SOC%20%26%20Blue%20Team-075985)
+![Stack](https://img.shields.io/badge/Stack-Wazuh%20%7C%20Suricata%20%7C%20Zeek-1F2937)
+![Scope](https://img.shields.io/badge/Scope-Authorized%20Lab-15803D)
+
+**From controlled ATT&CK-aligned activity to telemetry, detection and analyst investigation.**
+
+[Architecture](docs/architecture/architecture.md) · [Detection catalogue](detections/catalog.yml) · [Playbooks](docs/playbooks) · [My cybersecurity portfolio](docs/portfolio/github-projects.md)
+
+</div>
+
+---
+
 
 Laboratoire SOC d'entreprise reproductible avec Docker Compose. Il relie un
 SIEM/EDR Wazuh, une cible web volontairement vulnérable, Suricata, Zeek, des
@@ -136,3 +152,13 @@ make destroy CONFIRM_DESTROY=yes # destructif: supprime les volumes
 
 Les topologies Wazuh sont adaptées de la documentation Docker officielle
 Wazuh `v4.14.10`; les sources et licences sont consignées dans [NOTICE.md](NOTICE.md).
+
+## 👤 Author and cybersecurity portfolio
+
+**Yousef Gaddah** — Cybersecurity & Cloud Computing Engineering Student, ENIM – Mines Rabat.
+
+- [Curated technical project index](docs/portfolio/github-projects.md) — SOC, CTI, Cloud Security, DevSecOps, and security automation.
+- [GitHub profile README template](docs/portfolio/GITHUB_PROFILE_README.md) — prepared for the dedicated GitHub profile repository.
+- [LinkedIn](https://www.linkedin.com/in/yousef-gaddah) · [GitHub](https://github.com/gaddah-yousef)
+
+> This lab is an educational, locally scoped design. Read the documented limitations and validate runtime behavior before making claims about its deployment.
